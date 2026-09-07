@@ -7,7 +7,7 @@
     <string name="txt_crear_cuenta">¿No tienes cuenta? Regístrate</string>
     <string name="logo_desc">Logo Santo Tomás</string>
     <string name="msg_bienvenida">¡Bienvenido a la Aplicación!</string>
-    <string name="btn_continuar">Continuar</string>
+    <string name="btn_continuar">Ir al Menú Principal</string>
     <string name="registro_usuario">Registro de Usuario</string>
     <string name="txt_nombre_hint">Nombre y Apellido</string>
     <string name="hint_rut">RUT (ej: 12345678-9)</string>
@@ -17,12 +17,15 @@
     <string name="tipo_premium">Premium</string>
     <string name="btn_registrarse">Registrarse</string>
     <string name="btn_volver_login">Volver a iniciar sesión</string>
-    <string name="home_titulo">Inicio</string>
+    <string name="home_titulo">Menú Principal</string>
     <string name="lbl_progreso">Progreso de tareas:</string>
     <string name="txt_total">Total</string>
     <string name="txt_pendientes">Pendientes</string>
     <string name="txt_realizadas">Realizadas</string>
     <string name="btn_nueva_tarea">Agregar Tarea</string>
+    <string name="btn_ingresar_tarea">Ingresar Nueva Tarea</string>
+    <string name="btn_cerrar_sesion">Cerrar Sesión</string>
+    <string name="btn_volver_menu">Volver al Menú Principal</string>
     <string name="titulo_add_tarea">Nueva Tarea</string>
     <string name="nom_tarea_hint">Nombre de la tarea</string>
     <string name="lbl_categoria">Categoría:</string>

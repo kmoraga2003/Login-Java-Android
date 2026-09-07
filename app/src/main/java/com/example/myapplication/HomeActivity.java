@@ -2,8 +2,10 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +22,8 @@ public class HomeActivity extends AppCompatActivity {
     private TextView tvTotalCount;
     private TextView tvPendingCount;
     private TextView tvDoneCount;
+    private Button btnGoToAddTaskMenu;
+    private Button btnLogout;
     private FloatingActionButton fabAddTask;
 
     @Override
@@ -40,15 +44,33 @@ public class HomeActivity extends AppCompatActivity {
         tvTotalCount = findViewById(R.id.tvTotalCount);
         tvPendingCount = findViewById(R.id.tvPendingCount);
         tvDoneCount = findViewById(R.id.tvDoneCount);
+        btnGoToAddTaskMenu = findViewById(R.id.btnGoToAddTaskMenu);
+        btnLogout = findViewById(R.id.btnLogout);
         fabAddTask = findViewById(R.id.fabAddTask);
 
         if (Datos.usuarioLogueado != null) {
             tvHomeTitle.setText("Hola, " + Datos.usuarioLogueado.getNombreCompleto());
         }
 
+        // Botón de menú para ir a ingresar tarea
+        btnGoToAddTaskMenu.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, AddTaskActivity.class);
+            startActivity(intent);
+        });
+
+        // Botón flotante para ingresar tarea
         fabAddTask.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this, AddTaskActivity.class);
             startActivity(intent);
+        });
+
+        // Botón para cerrar sesión y volver a inicio
+        btnLogout.setOnClickListener(v -> {
+            Datos.usuarioLogueado = null;
+            Toast.makeText(HomeActivity.this, "Sesión cerrada correctamente", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(HomeActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
         });
 
         actualizarEstadisticas();

@@ -82,6 +82,14 @@
             android:layout_height="wrap_content"
             android:text="@string/btn_guardar_tarea" />
 
+        <Button
+            android:id="@+id/btnBackToHome"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_volver_menu" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

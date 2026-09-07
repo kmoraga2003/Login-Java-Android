@@ -30,15 +30,31 @@
         app:layout_constraintTop_toBottomOf="@id/ivUserAvatar"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <Button
-        android:id="@+id/btnContinue"
+    <LinearLayout
+        android:id="@+id/llWelcomeButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_marginTop="32dp"
-        android:text="@string/btn_continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvWelcomeMsg" />
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeMsg">
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_continuar" />
+
+        <Button
+            android:id="@+id/btnLogoutWelcome"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_volver_login" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
