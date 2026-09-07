@@ -16,6 +16,7 @@
     <string name="tipo_estandar">Estándar</string>
     <string name="tipo_premium">Premium</string>
     <string name="btn_registrarse">Registrarse</string>
+    <string name="btn_volver_login">Volver a iniciar sesión</string>
     <string name="home_titulo">Inicio</string>
     <string name="lbl_progreso">Progreso de tareas:</string>
     <string name="txt_total">Total</string>

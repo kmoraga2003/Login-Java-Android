@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +23,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText etRegPassword;
     private RadioGroup rgUserType;
     private Button btnRegister;
+    private Button btnGoToLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +45,13 @@ public class RegisterActivity extends AppCompatActivity {
         etRegPassword = findViewById(R.id.etRegPassword);
         rgUserType = findViewById(R.id.rgUserType);
         btnRegister = findViewById(R.id.btnRegister);
+        btnGoToLogin = findViewById(R.id.btnGoToLogin);
 
         // Evento click en registrarse
         btnRegister.setOnClickListener(v -> registrarUsuario());
+
+        // Evento click en volver a iniciar sesión
+        btnGoToLogin.setOnClickListener(v -> finish());
     }
 
     private void registrarUsuario() {
@@ -121,7 +127,7 @@ public class RegisterActivity extends AppCompatActivity {
         // Guardar en la lista en memoria
         Datos.listaUsuarios.add(nuevoUsuario);
 
-        Toast.makeText(this, "¡Registro exitoso! Ya puedes iniciar sesión", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "¡Registro exitoso! Regresando al inicio de sesión", Toast.LENGTH_LONG).show();
         finish();
     }
 }
