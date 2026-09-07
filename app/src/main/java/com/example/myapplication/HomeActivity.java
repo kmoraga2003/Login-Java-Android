@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -22,9 +24,11 @@ public class HomeActivity extends AppCompatActivity {
     private TextView tvTotalCount;
     private TextView tvPendingCount;
     private TextView tvDoneCount;
+    private RecyclerView rvTasks;
     private Button btnGoToAddTaskMenu;
     private Button btnLogout;
     private FloatingActionButton fabAddTask;
+    private TaskAdapter taskAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +48,7 @@ public class HomeActivity extends AppCompatActivity {
         tvTotalCount = findViewById(R.id.tvTotalCount);
         tvPendingCount = findViewById(R.id.tvPendingCount);
         tvDoneCount = findViewById(R.id.tvDoneCount);
+        rvTasks = findViewById(R.id.rvTasks);
         btnGoToAddTaskMenu = findViewById(R.id.btnGoToAddTaskMenu);
         btnLogout = findViewById(R.id.btnLogout);
         fabAddTask = findViewById(R.id.fabAddTask);
@@ -51,6 +56,11 @@ public class HomeActivity extends AppCompatActivity {
         if (Datos.usuarioLogueado != null) {
             tvHomeTitle.setText("Hola, " + Datos.usuarioLogueado.getNombreCompleto());
         }
+
+        // Configurar RecyclerView
+        rvTasks.setLayoutManager(new LinearLayoutManager(this));
+        taskAdapter = new TaskAdapter(Datos.listaTareas, () -> actualizarEstadisticas());
+        rvTasks.setAdapter(taskAdapter);
 
         // Botón de menú para ir a ingresar tarea
         btnGoToAddTaskMenu.setOnClickListener(v -> {
@@ -79,7 +89,10 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        // Actualizar datos al regresar de agregar una tarea
+        // Actualizar datos y RecyclerView al regresar de agregar una tarea
+        if (taskAdapter != null) {
+            taskAdapter.notifyDataSetChanged();
+        }
         actualizarEstadisticas();
     }
 

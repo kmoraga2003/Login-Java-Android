@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">TaskMaster</string>
     <string name="titulo_bienvenida">Bienvenido</string>
     <string name="correo_hint">Correo electrónico</string>
     <string name="clave_hint">Contraseña</string>
