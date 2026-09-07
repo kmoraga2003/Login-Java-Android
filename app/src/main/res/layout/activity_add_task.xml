@@ -18,7 +18,7 @@
         android:id="@+id/tvAddTaskTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_task_title"
+        android:text="@string/titulo_add_tarea"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginTop="24dp"
@@ -36,7 +36,7 @@
             android:id="@+id/etTaskName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/add_task_hint"
+            android:hint="@string/nom_tarea_hint"
             android:inputType="textCapSentences"
             android:importantForAutofill="no"
             android:layout_marginBottom="16dp" />
@@ -44,7 +44,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_task_category"
+            android:text="@string/lbl_categoria"
             android:textStyle="bold" />
 
         <Spinner
@@ -57,13 +57,13 @@
             android:id="@+id/cbUrgent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_task_urgent"
+            android:text="@string/chk_urgente"
             android:layout_marginBottom="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_task_priority"
+            android:text="@string/lbl_prioridad"
             android:textStyle="bold"
             android:layout_marginBottom="8dp" />
 
@@ -80,7 +80,7 @@
             android:id="@+id/btnSaveTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add_task_button" />
+            android:text="@string/btn_guardar_tarea" />
 
     </LinearLayout>
 

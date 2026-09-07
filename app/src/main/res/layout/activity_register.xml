@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
-            android:text="@string/register_title"
+            android:text="@string/registro_usuario"
             android:textSize="28sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:autofillHints="name"
-                android:hint="@string/register_name_hint"
+                android:hint="@string/txt_nombre_hint"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -60,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:autofillHints="emailAddress"
-                android:hint="@string/login_email_hint"
+                android:hint="@string/correo_hint"
                 android:inputType="textEmailAddress" />
 
             <EditText
@@ -69,14 +69,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:autofillHints="password"
-                android:hint="@string/login_password_hint"
+                android:hint="@string/clave_hint"
                 android:inputType="textPassword" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="@string/register_type_label"
+                android:text="@string/lbl_tipo_usuario"
                 android:textStyle="bold" />
 
             <RadioGroup
@@ -91,21 +91,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="@string/register_type_standard" />
+                    android:text="@string/tipo_estandar" />
 
                 <RadioButton
                     android:id="@+id/rbPremium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="@string/register_type_premium" />
+                    android:text="@string/tipo_premium" />
             </RadioGroup>
 
             <Button
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/register_button" />
+                android:text="@string/btn_registrarse" />
 
         </LinearLayout>
 
