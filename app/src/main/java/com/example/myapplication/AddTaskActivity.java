@@ -22,6 +22,7 @@ public class AddTaskActivity extends AppCompatActivity {
     private CheckBox cbUrgent;
     private RatingBar rbPriority;
     private Button btnSaveTask;
+    private Button btnBackToHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class AddTaskActivity extends AppCompatActivity {
         cbUrgent = findViewById(R.id.cbUrgent);
         rbPriority = findViewById(R.id.rbPriority);
         btnSaveTask = findViewById(R.id.btnSaveTask);
+        btnBackToHome = findViewById(R.id.btnBackToHome);
 
         // Cargar datos en el Spinner de categorías
         String[] categorias = {"Estudio", "Trabajo", "Personal", "Otro"};
@@ -48,6 +50,9 @@ public class AddTaskActivity extends AppCompatActivity {
         spCategory.setAdapter(adapter);
 
         btnSaveTask.setOnClickListener(v -> guardarTarea());
+
+        // Botón volver al Menú Principal
+        btnBackToHome.setOnClickListener(v -> finish());
     }
 
     private void guardarTarea() {
