@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="h1">Bienvenido</string>
+    <string name="login_email_hint">Correo electrónico</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_button_text">Iniciar Sesión</string>
+    <string name="login_register_button">¿No tienes cuenta? Regístrate</string>
+    <string name="login_logo_desc">Logo Santo Tomás</string>
+    <string name="welcome_message">¡Bienvenido a la Aplicación!</string>
+    <string name="welcome_continue_button">Continuar</string>
+    <string name="register_title">Registro de Usuario</string>
+    <string name="register_name_hint">Nombre completo</string>
+    <string name="register_type_label">Tipo de Usuario:</string>
+    <string name="register_type_standard">Estándar</string>
+    <string name="register_type_premium">Premium</string>
+    <string name="register_button">Registrarse</string>
+    <string name="home_title">Inicio</string>
+    <string name="home_progress_label">Progreso de tareas:</string>
+    <string name="home_stats_total">Total</string>
+    <string name="home_stats_pending">Pendientes</string>
+    <string name="home_stats_done">Realizadas</string>
+    <string name="home_add_button">Agregar Tarea</string>
+    <string name="add_task_title">Nueva Tarea</string>
+    <string name="add_task_hint">Nombre de la tarea</string>
+    <string name="add_task_category">Categoría:</string>
+    <string name="add_task_urgent">¿Es urgente?</string>
+    <string name="add_task_priority">Prioridad:</string>
+    <string name="add_task_button">Guardar Tarea</string>
+</resources>
