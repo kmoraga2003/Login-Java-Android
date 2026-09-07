@@ -55,6 +55,23 @@
                 android:inputType="textPersonName" />
 
             <EditText
+                android:id="@+id/etRegRut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:hint="@string/hint_rut"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etRegPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="telephoneNumber"
+                android:hint="@string/hint_telefono"
+                android:inputType="phone" />
+
+            <EditText
                 android:id="@+id/etRegEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

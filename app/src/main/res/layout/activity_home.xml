@@ -83,13 +83,16 @@
 
         <TableRow>
             <TextView
-                android:text="10"
+                android:id="@+id/tvTotalCount"
+                android:text="0"
                 android:textAlignment="center" />
             <TextView
-                android:text="3"
+                android:id="@+id/tvPendingCount"
+                android:text="0"
                 android:textAlignment="center" />
             <TextView
-                android:text="7"
+                android:id="@+id/tvDoneCount"
+                android:text="0"
                 android:textAlignment="center" />
         </TableRow>
     </TableLayout>

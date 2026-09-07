@@ -9,7 +9,9 @@
     <string name="msg_bienvenida">¡Bienvenido a la Aplicación!</string>
     <string name="btn_continuar">Continuar</string>
     <string name="registro_usuario">Registro de Usuario</string>
-    <string name="txt_nombre_hint">Nombre completo</string>
+    <string name="txt_nombre_hint">Nombre y Apellido</string>
+    <string name="hint_rut">RUT (ej: 12345678-9)</string>
+    <string name="hint_telefono">Teléfono (ej: +56 9 1234 5678)</string>
     <string name="lbl_tipo_usuario">Tipo de Usuario:</string>
     <string name="tipo_estandar">Estándar</string>
     <string name="tipo_premium">Premium</string>
